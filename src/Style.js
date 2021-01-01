@@ -1,11 +1,9 @@
 import React from 'react'
 import './Style.css'
-import YouTube from 'react-youtube'
 import Landing from './Landing'
 import Player from './Player'
 
 function Style({movie, trailer, query}) {
-
     return (
         <div>
             <br/>
@@ -21,12 +19,12 @@ function Style({movie, trailer, query}) {
                     <br/>
                     <br/>
                     <Player trailer={trailer} />
-                    <p>{movie.plot}</p>
+                    <p style={{'lineHeight':'20px'}}>{movie.Plot}</p>
                     <h2>Genre:  {movie.Genre}</h2>
-                    <h2>Actors:  {movie.Actors}</h2>
+                    <h2 style={{'lineHeight':'20px'}}>Actors:  {movie.Actors}</h2>
                     <h2>Year:  {movie.Year}</h2>
                     <h2>Director:  {movie.Director}</h2>
-                    <h2 style={{'line-height':30}}>Writer:  {movie.Writer}</h2>
+                    <h2 style={{'lineHeight':'20px'}}>Writer:  {movie.Writer}</h2>
                     <h2>Language:  {movie.Language}</h2>
                     <h2>Awards:  {movie.Awards}</h2>
                     <h2>Box Office collections:  {movie.BoxOffice}</h2>

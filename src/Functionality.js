@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import axios from 'axios';
 import Style from './Style'
 import './Style.css'
-import Player from './Player';
 
 function Functionality() {
 
