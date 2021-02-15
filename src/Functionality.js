@@ -15,7 +15,7 @@ function Functionality() {
     }, [query])
 
     const getMovie = async() => {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=cd23594a&t=${query}`)
+        const response = await fetch(`http://www.omdbapi.com/?apikey=********&t=${query}`)
         const data = await response.json()
         setMovie(data)
     }
