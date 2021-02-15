@@ -21,7 +21,7 @@ function Functionality() {
     }
 
     const getId = async() => {
-        const res = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=AIzaSyBpmDJR4_AEQICJKPBprfoVzpEkWvP257o&maxResults=1`)
+        const res = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=******************************&maxResults=1`)
         const data = await res.json()
         const video_id = data.items[0].id.videoId
         setTrailer(video_id)
